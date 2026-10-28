@@ -55,7 +55,7 @@ MAX_FILE_SIZE = 20 * 1024 * 1024  # 20 MB
 # ---------- Helpers ----------
 
 def dataframe_report(df: pd.DataFrame):
-    """Preview aur data-quality report banata hai."""
+    """Preview and data-quality report are made here."""
     columns = []
 
     for column in df.columns:
@@ -88,7 +88,7 @@ def dataframe_report(df: pd.DataFrame):
 
 
 def read_original(folder: Path):
-    """Saved original file se dataset read karta hai."""
+    """Read the dataset from the saved original file."""
     csv_path = folder / "original.csv"
     excel_path = folder / "original.xlsx"
 
@@ -155,7 +155,7 @@ def upload_dataset(
         if extension == ".csv":
             df = pd.read_csv(io.BytesIO(contents))
         else:
-            # Abhi first Excel sheet process hogi.
+            # Only the first worksheet in the Excel file is processed.
             df = pd.read_excel(
                 io.BytesIO(contents),
                 engine="openpyxl"
@@ -181,7 +181,7 @@ def upload_dataset(
         )
 
     report = dataframe_report(df)
-    # Har upload ka alag folder.
+    # Store each upload in a separate folder.
     dataset_id = str(uuid4())
     folder = DATA_DIR / dataset_id
 
@@ -209,7 +209,7 @@ def upload_dataset(
             detail="Could not save dataset.",
         ) from None
 
-    # Except block ke BAHAR: successful file save ke baad chalega.
+    # Run this after the try block completes and the file is saved successfully.
     save_dataset_owner(
         dataset_id=dataset_id,
         user_id=user["_id"],
@@ -243,7 +243,7 @@ def clean_dataset(
             detail="Dataset not found. Upload it first."
         )
 
-    # Har cleaning run original se start hota hai.
+    # Start each cleaning run from the original file.
     df = read_original(folder)
     before = dataframe_report(df)
 
@@ -255,7 +255,7 @@ def clean_dataset(
             )
 
     if options.blank_as_missing:
-        # Empty ya whitespace-only cells ko missing maana jayega.
+        # Treat empty or whitespace-only cells as missing.
         df = df.replace(r"^\s*$", pd.NA, regex=True)
 
     duplicate_rows_removed = 0
@@ -285,7 +285,7 @@ def clean_dataset(
 
     after = dataframe_report(df)
 
-    # Har cleaning run ki alag version save hogi.
+    # Save each cleaning run as a separate version.
     cleaning_id = str(uuid4())
     parquet_path = folder / f"cleaned_{cleaning_id}.parquet"
     report_path = folder / f"cleaning_{cleaning_id}.json"
@@ -352,7 +352,7 @@ def dataset_analytics(
 
     df = pd.read_parquet(parquet_path)
 
-    # User ke selected columns dataset mein hone chahiye.
+    # Ensure the selected columns exist in the dataset.
     for column in [group_by, metric]:
         if column not in df.columns:
             raise HTTPException(
@@ -375,14 +375,14 @@ def dataset_analytics(
             detail=f"Column '{metric}' must contain numeric data."
         )
 
-    # Column names ko safely SQL identifiers banate hain.
+    # Safely quote column names as SQL identifiers.
     def quote_identifier(name: str):
         return '"' + name.replace('"', '""') + '"'
 
     group_column = quote_identifier(group_by)
     metric_column = quote_identifier(metric)
 
-    # Allowed functions fixed hain.
+    # Use a fixed set of allowed functions.
     functions = {
         "sum": "SUM",
         "avg": "AVG",

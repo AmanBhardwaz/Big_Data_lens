@@ -42,13 +42,13 @@ def open_dataset(dataset_id: str, cleaning_id: str):
     )
 
     try:
-        # Backend apni selected Parquet file load karta hai.
+        # Load the selected Parquet file.
         connection.execute(
             "CREATE TABLE dataset AS SELECT * FROM read_parquet(?)",
             [str(parquet_path)]
         )
 
-        # LLM ki queries ko external file/network access nahi milega.
+        # Prevent LLM-generated queries from accessing external files or networks.
         connection.execute("SET enable_external_access = false")
 
         schema = connection.execute(
@@ -138,7 +138,7 @@ def validate_sql(sql: str) -> str:
 def execute_sql(connection, sql: str):
     validated_sql = validate_sql(sql)
 
-    # Ek extra row se pata chalega ki result truncate hua hai.
+    # Fetch one extra row to determine whether the result was truncated.
     limited_sql = f"""
         SELECT *
         FROM ({validated_sql}) AS answer
@@ -150,7 +150,7 @@ def execute_sql(connection, sql: str):
     timer.start()
 
     try:
-        # DuckDB actual column names aur types bhi validate karega.
+        # DuckDB also validates the actual column names and data types.
         connection.execute("EXPLAIN " + limited_sql)
         result = connection.execute(limited_sql).fetchdf()
     finally:

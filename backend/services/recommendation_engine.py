@@ -127,7 +127,7 @@ def build_recommendations(analysis: dict):
                 "values before converting it.",
             )
 
-    # IF ke bahar: har dataset ke liye variable define hoga.
+    # Keep this outside the conditional so it is defined for every dataset.
         advanced = analysis.get("advanced", {})
 
         for item in advanced.get("outliers", []):
