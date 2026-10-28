@@ -1,0 +1,176 @@
+{
+  "message": "Dataset cleaned and saved as Parquet.",
+  "dataset_id": "9000a7b8-5c5f-47a8-87cc-5276115b789b",
+  "cleaning_id": "e37b2b6e-b5d1-49f9-acc5-1fc42f6bdefb",
+  "cleaned_file": "cleaned_e37b2b6e-b5d1-49f9-acc5-1fc42f6bdefb.parquet",
+  "options": {
+    "trim_spaces": true,
+    "blank_as_missing": true,
+    "remove_duplicates": true,
+    "missing_strategy": "drop_rows"
+  },
+  "duplicate_rows_removed": 0,
+  "missing_rows_removed": 0,
+  "before": {
+    "total_rows": 10,
+    "total_columns": 3,
+    "duplicate_rows": 0,
+    "total_missing_values": 0,
+    "column_report": [
+      {
+        "column": "Product",
+        "data_type": "str",
+        "missing_values": 0,
+        "missing_percentage": 0.0,
+        "unique_values": 10
+      },
+      {
+        "column": "Quantity",
+        "data_type": "int64",
+        "missing_values": 0,
+        "missing_percentage": 0.0,
+        "unique_values": 10
+      },
+      {
+        "column": "Price",
+        "data_type": "int64",
+        "missing_values": 0,
+        "missing_percentage": 0.0,
+        "unique_values": 10
+      }
+    ],
+    "preview": [
+      {
+        "Product": "Laptop",
+        "Quantity": 5,
+        "Price": 55000
+      },
+      {
+        "Product": "Mouse",
+        "Quantity": 20,
+        "Price": 800
+      },
+      {
+        "Product": "Keyboard",
+        "Quantity": 15,
+        "Price": 1500
+      },
+      {
+        "Product": "Monitor",
+        "Quantity": 8,
+        "Price": 12000
+      },
+      {
+        "Product": "Headphones",
+        "Quantity": 12,
+        "Price": 2500
+      },
+      {
+        "Product": "Webcam",
+        "Quantity": 10,
+        "Price": 3200
+      },
+      {
+        "Product": "SSD",
+        "Quantity": 7,
+        "Price": 6500
+      },
+      {
+        "Product": "Printer",
+        "Quantity": 4,
+        "Price": 14500
+      },
+      {
+        "Product": "Tablet",
+        "Quantity": 6,
+        "Price": 22000
+      },
+      {
+        "Product": "Speaker",
+        "Quantity": 14,
+        "Price": 1800
+      }
+    ]
+  },
+  "after": {
+    "total_rows": 10,
+    "total_columns": 3,
+    "duplicate_rows": 0,
+    "total_missing_values": 0,
+    "column_report": [
+      {
+        "column": "Product",
+        "data_type": "str",
+        "missing_values": 0,
+        "missing_percentage": 0.0,
+        "unique_values": 10
+      },
+      {
+        "column": "Quantity",
+        "data_type": "int64",
+        "missing_values": 0,
+        "missing_percentage": 0.0,
+        "unique_values": 10
+      },
+      {
+        "column": "Price",
+        "data_type": "int64",
+        "missing_values": 0,
+        "missing_percentage": 0.0,
+        "unique_values": 10
+      }
+    ],
+    "preview": [
+      {
+        "Product": "Laptop",
+        "Quantity": 5,
+        "Price": 55000
+      },
+      {
+        "Product": "Mouse",
+        "Quantity": 20,
+        "Price": 800
+      },
+      {
+        "Product": "Keyboard",
+        "Quantity": 15,
+        "Price": 1500
+      },
+      {
+        "Product": "Monitor",
+        "Quantity": 8,
+        "Price": 12000
+      },
+      {
+        "Product": "Headphones",
+        "Quantity": 12,
+        "Price": 2500
+      },
+      {
+        "Product": "Webcam",
+        "Quantity": 10,
+        "Price": 3200
+      },
+      {
+        "Product": "SSD",
+        "Quantity": 7,
+        "Price": 6500
+      },
+      {
+        "Product": "Printer",
+        "Quantity": 4,
+        "Price": 14500
+      },
+      {
+        "Product": "Tablet",
+        "Quantity": 6,
+        "Price": 22000
+      },
+      {
+        "Product": "Speaker",
+        "Quantity": 14,
+        "Price": 1800
+      }
+    ]
+  }
+}

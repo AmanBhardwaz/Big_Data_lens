@@ -1,0 +1,85 @@
+{
+  "dataset_id": "0c5c3c0e-edb5-45bf-a347-e841ab6362f7",
+  "filename": "messy_sales.csv",
+  "original_report": {
+    "total_rows": 20,
+    "total_columns": 3,
+    "duplicate_rows": 0,
+    "total_missing_values": 5,
+    "column_report": [
+      {
+        "column": "Product",
+        "data_type": "str",
+        "missing_values": 0,
+        "missing_percentage": 0.0,
+        "unique_values": 19
+      },
+      {
+        "column": "Quantity",
+        "data_type": "str",
+        "missing_values": 3,
+        "missing_percentage": 15.0,
+        "unique_values": 17
+      },
+      {
+        "column": "Price",
+        "data_type": "float64",
+        "missing_values": 2,
+        "missing_percentage": 10.0,
+        "unique_values": 18
+      }
+    ],
+    "preview": [
+      {
+        "Product": "Laptop",
+        "Quantity": "5",
+        "Price": 55000.0
+      },
+      {
+        "Product": "Mouse",
+        "Quantity": "20",
+        "Price": 800.0
+      },
+      {
+        "Product": "Keyboard",
+        "Quantity": "15",
+        "Price": 1500.0
+      },
+      {
+        "Product": "Monitor",
+        "Quantity": "8",
+        "Price": 12000.0
+      },
+      {
+        "Product": "Headphones",
+        "Quantity": "12",
+        "Price": 2500.0
+      },
+      {
+        "Product": "Webcam",
+        "Quantity": "10",
+        "Price": 3200.0
+      },
+      {
+        "Product": "SSD",
+        "Quantity": "7",
+        "Price": 6500.0
+      },
+      {
+        "Product": "Printer",
+        "Quantity": "4",
+        "Price": 14500.0
+      },
+      {
+        "Product": "Tablet",
+        "Quantity": "6",
+        "Price": 22000.0
+      },
+      {
+        "Product": "Speaker",
+        "Quantity": "14",
+        "Price": 1800.0
+      }
+    ]
+  }
+}

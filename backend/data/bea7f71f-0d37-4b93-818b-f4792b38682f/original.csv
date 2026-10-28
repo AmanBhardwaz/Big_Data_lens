@@ -1,0 +1,21 @@
+Product,Quantity,Price
+Laptop,5,55000
+Mouse,20,800
+Keyboard,15,1500
+Monitor,8,12000
+Headphones,12,2500
+Webcam,10,3200
+SSD,7,6500
+Printer,4,14500
+Tablet,6,22000
+Speaker,14,1800
+Router,9,3500
+Smartwatch,11,7500
+Microphone,null,4200
+Power Bank,18,NaN
+Keyboard,,1600
+USB Cable,25,399
+External HDD,NaN,5200
+Projector,3,null
+Graphics Card,2,45000
+Desk Lamp,invalid,1200

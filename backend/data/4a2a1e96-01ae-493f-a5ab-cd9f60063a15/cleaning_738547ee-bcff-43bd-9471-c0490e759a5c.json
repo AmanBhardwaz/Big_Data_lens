@@ -1,0 +1,142 @@
+{
+  "message": "Dataset cleaned and saved as Parquet.",
+  "dataset_id": "4a2a1e96-01ae-493f-a5ab-cd9f60063a15",
+  "cleaning_id": "738547ee-bcff-43bd-9471-c0490e759a5c",
+  "cleaned_file": "cleaned_738547ee-bcff-43bd-9471-c0490e759a5c.parquet",
+  "options": {
+    "trim_spaces": true,
+    "blank_as_missing": true,
+    "remove_duplicates": true,
+    "missing_strategy": "keep"
+  },
+  "duplicate_rows_removed": 0,
+  "missing_rows_removed": 0,
+  "before": {
+    "total_rows": 10,
+    "total_columns": 2,
+    "duplicate_rows": 0,
+    "total_missing_values": 0,
+    "column_report": [
+      {
+        "column": "Name",
+        "data_type": "str",
+        "missing_values": 0,
+        "missing_percentage": 0.0,
+        "unique_values": 10
+      },
+      {
+        "column": "Email",
+        "data_type": "str",
+        "missing_values": 0,
+        "missing_percentage": 0.0,
+        "unique_values": 10
+      }
+    ],
+    "preview": [
+      {
+        "Name": "Aman Sharma",
+        "Email": "aman.sharma@example.com"
+      },
+      {
+        "Name": "Priya Singh",
+        "Email": "priya.singh@example.com"
+      },
+      {
+        "Name": "Rohit Kumar",
+        "Email": "rohit.kumar@example.com"
+      },
+      {
+        "Name": "Neha Verma",
+        "Email": "neha.verma@example.com"
+      },
+      {
+        "Name": "Arjun Gupta",
+        "Email": "arjun.gupta@example.com"
+      },
+      {
+        "Name": "Simran Kaur",
+        "Email": "simran.kaur@example.com"
+      },
+      {
+        "Name": "Vikram Patel",
+        "Email": "vikram.patel@example.com"
+      },
+      {
+        "Name": "Ananya Das",
+        "Email": "ananya.das@example.com"
+      },
+      {
+        "Name": "Kunal Joshi",
+        "Email": "kunal.joshi@example.com"
+      },
+      {
+        "Name": "Meera Nair",
+        "Email": "meera.nair@example.com"
+      }
+    ]
+  },
+  "after": {
+    "total_rows": 10,
+    "total_columns": 2,
+    "duplicate_rows": 0,
+    "total_missing_values": 0,
+    "column_report": [
+      {
+        "column": "Name",
+        "data_type": "str",
+        "missing_values": 0,
+        "missing_percentage": 0.0,
+        "unique_values": 10
+      },
+      {
+        "column": "Email",
+        "data_type": "str",
+        "missing_values": 0,
+        "missing_percentage": 0.0,
+        "unique_values": 10
+      }
+    ],
+    "preview": [
+      {
+        "Name": "Aman Sharma",
+        "Email": "aman.sharma@example.com"
+      },
+      {
+        "Name": "Priya Singh",
+        "Email": "priya.singh@example.com"
+      },
+      {
+        "Name": "Rohit Kumar",
+        "Email": "rohit.kumar@example.com"
+      },
+      {
+        "Name": "Neha Verma",
+        "Email": "neha.verma@example.com"
+      },
+      {
+        "Name": "Arjun Gupta",
+        "Email": "arjun.gupta@example.com"
+      },
+      {
+        "Name": "Simran Kaur",
+        "Email": "simran.kaur@example.com"
+      },
+      {
+        "Name": "Vikram Patel",
+        "Email": "vikram.patel@example.com"
+      },
+      {
+        "Name": "Ananya Das",
+        "Email": "ananya.das@example.com"
+      },
+      {
+        "Name": "Kunal Joshi",
+        "Email": "kunal.joshi@example.com"
+      },
+      {
+        "Name": "Meera Nair",
+        "Email": "meera.nair@example.com"
+      }
+    ]
+  }
+}

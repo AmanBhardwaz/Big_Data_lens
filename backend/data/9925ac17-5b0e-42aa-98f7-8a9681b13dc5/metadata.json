@@ -1,0 +1,85 @@
+{
+  "dataset_id": "9925ac17-5b0e-42aa-98f7-8a9681b13dc5",
+  "filename": "sales_data.xlsx",
+  "original_report": {
+    "total_rows": 30,
+    "total_columns": 3,
+    "duplicate_rows": 0,
+    "total_missing_values": 0,
+    "column_report": [
+      {
+        "column": "Customer_ID",
+        "data_type": "int64",
+        "missing_values": 0,
+        "missing_percentage": 0.0,
+        "unique_values": 5
+      },
+      {
+        "column": "Item_Category",
+        "data_type": "str",
+        "missing_values": 0,
+        "missing_percentage": 0.0,
+        "unique_values": 4
+      },
+      {
+        "column": "Amount",
+        "data_type": "float64",
+        "missing_values": 0,
+        "missing_percentage": 0.0,
+        "unique_values": 30
+      }
+    ],
+    "preview": [
+      {
+        "Customer_ID": 2,
+        "Item_Category": "Electronics",
+        "Amount": 320.13
+      },
+      {
+        "Customer_ID": 4,
+        "Item_Category": "Books",
+        "Amount": 145.47
+      },
+      {
+        "Customer_ID": 1,
+        "Item_Category": "Electronics",
+        "Amount": 177.89
+      },
+      {
+        "Customer_ID": 2,
+        "Item_Category": "Clothing",
+        "Amount": 497.95
+      },
+      {
+        "Customer_ID": 1,
+        "Item_Category": "Books",
+        "Amount": 73.87
+      },
+      {
+        "Customer_ID": 4,
+        "Item_Category": "Electronics",
+        "Amount": 407.96
+      },
+      {
+        "Customer_ID": 4,
+        "Item_Category": "Electronics",
+        "Amount": 81.56
+      },
+      {
+        "Customer_ID": 1,
+        "Item_Category": "Clothing",
+        "Amount": 170.57
+      },
+      {
+        "Customer_ID": 4,
+        "Item_Category": "Books",
+        "Amount": 227.0
+      },
+      {
+        "Customer_ID": 4,
+        "Item_Category": "Electronics",
+        "Amount": 490.03
+      }
+    ]
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "dataset_id": "7c05eb37-36b9-4789-abc8-944061019317",
+  "filename": "mechsense_vehicle_data.csv",
+  "original_report": {
+    "total_rows": 100,
+    "total_columns": 6,
+    "duplicate_rows": 0,
+    "total_missing_values": 0,
+    "column_report": [
+      {
+        "column": "Vehicle_ID",
+        "data_type": "int64",
+        "missing_values": 0,
+        "missing_percentage": 0.0,
+        "unique_values": 100
+      },
+      {
+        "column": "Engine_Temp",
+        "data_type": "float64",
+        "missing_values": 0,
+        "missing_percentage": 0.0,
+        "unique_values": 100
+      },
+      {
+        "column": "Battery_Voltage",
+        "data_type": "float64",
+        "missing_values": 0,
+        "missing_percentage": 0.0,
+        "unique_values": 100
+      },
+      {
+        "column": "Brake_Pressure",
+        "data_type": "float64",
+        "missing_values": 0,
+        "missing_percentage": 0.0,
+        "unique_values": 100
+      },
+      {
+        "column": "Failure_Probability",
+        "data_type": "float64",
+        "missing_values": 0,
+        "missing_percentage": 0.0,
+        "unique_values": 100
+      },
+      {
+        "column": "Failure_Type",
+        "data_type": "str",
+        "missing_values": 0,
+        "missing_percentage": 0.0,
+        "unique_values": 5
+      }
+    ],
+    "preview": [
+      {
+        "Vehicle_ID": 1001,
+        "Engine_Temp": 93.132124992,
+        "Battery_Voltage": 12.7544537156,
+        "Brake_Pressure": 87.4328427946,
+        "Failure_Probability": 28.2848726591,
+        "Failure_Type": "Brakes"
+      },
+      {
+        "Vehicle_ID": 1002,
+        "Engine_Temp": 118.6061308578,
+        "Battery_Voltage": 12.0043545041,
+        "Brake_Pressure": 112.8498215767,
+        "Failure_Probability": 72.8412923788,
+        "Failure_Type": "Battery"
+      },
+      {
+        "Vehicle_ID": 1003,
+        "Engine_Temp": 106.150846258,
+        "Battery_Voltage": 12.6347454741,
+        "Brake_Pressure": 77.7368787712,
+        "Failure_Probability": 72.0377619118,
+        "Failure_Type": "Tires"
+      },
+      {
+        "Vehicle_ID": 1004,
+        "Engine_Temp": 110.2024984557,
+        "Battery_Voltage": 12.0546158989,
+        "Brake_Pressure": 114.7725739472,
+        "Failure_Probability": 64.8637708249,
+        "Failure_Type": "Electrical"
+      },
+      {
+        "Vehicle_ID": 1005,
+        "Engine_Temp": 99.9125334487,
+        "Battery_Voltage": 14.1420222263,
+        "Brake_Pressure": 121.4057377686,
+        "Failure_Probability": 55.9882863005,
+        "Failure_Type": "Engine"
+      },
+      {
+        "Vehicle_ID": 1006,
+        "Engine_Temp": 102.7776033482,
+        "Battery_Voltage": 12.0915152271,
+        "Brake_Pressure": 111.9567331278,
+        "Failure_Probability": 96.2067485453,
+        "Failure_Type": "Brakes"
+      },
+      {
+        "Vehicle_ID": 1007,
+        "Engine_Temp": 83.8099018036,
+        "Battery_Voltage": 13.8204418394,
+        "Brake_Pressure": 127.0293885966,
+        "Failure_Probability": 40.0340539142,
+        "Failure_Type": "Tires"
+      },
+      {
+        "Vehicle_ID": 1008,
+        "Engine_Temp": 86.0768553979,
+        "Battery_Voltage": 13.6559672178,
+        "Brake_Pressure": 69.1321216491,
+        "Failure_Probability": 2.9976225832,
+        "Failure_Type": "Electrical"
+      },
+      {
+        "Vehicle_ID": 1009,
+        "Engine_Temp": 100.7746353474,
+        "Battery_Voltage": 11.676764558,
+        "Brake_Pressure": 139.9235443554,
+        "Failure_Probability": 74.0334091781,
+        "Failure_Type": "Brakes"
+      },
+      {
+        "Vehicle_ID": 1010,
+        "Engine_Temp": 95.935482167,
+        "Battery_Voltage": 13.9885157076,
+        "Brake_Pressure": 69.3689538866,
+        "Failure_Probability": 76.8811709896,
+        "Failure_Type": "Brakes"
+      }
+    ]
+  }
+}

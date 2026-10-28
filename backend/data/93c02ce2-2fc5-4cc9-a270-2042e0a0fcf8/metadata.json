@@ -1,0 +1,136 @@
+{
+  "dataset_id": "93c02ce2-2fc5-4cc9-a270-2042e0a0fcf8",
+  "filename": "worldwide_coffee_habits.csv",
+  "original_report": {
+    "total_rows": 10000,
+    "total_columns": 6,
+    "duplicate_rows": 0,
+    "total_missing_values": 15,
+    "column_report": [
+      {
+        "column": "Country",
+        "data_type": "str",
+        "missing_values": 0,
+        "missing_percentage": 0.0,
+        "unique_values": 50
+      },
+      {
+        "column": "Year",
+        "data_type": "int64",
+        "missing_values": 0,
+        "missing_percentage": 0.0,
+        "unique_values": 24
+      },
+      {
+        "column": "Coffee Consumption (kg per capita per year)",
+        "data_type": "float64",
+        "missing_values": 6,
+        "missing_percentage": 0.06,
+        "unique_values": 9994
+      },
+      {
+        "column": "Average Coffee Price (USD per kg)",
+        "data_type": "float64",
+        "missing_values": 6,
+        "missing_percentage": 0.06,
+        "unique_values": 9994
+      },
+      {
+        "column": "Type of Coffee Consumed",
+        "data_type": "str",
+        "missing_values": 3,
+        "missing_percentage": 0.03,
+        "unique_values": 5
+      },
+      {
+        "column": "Population (millions)",
+        "data_type": "float64",
+        "missing_values": 0,
+        "missing_percentage": 0.0,
+        "unique_values": 10000
+      }
+    ],
+    "preview": [
+      {
+        "Country": "Country_39",
+        "Year": 2023,
+        "Coffee Consumption (kg per capita per year)": 9.253938981,
+        "Average Coffee Price (USD per kg)": 6.467453002,
+        "Type of Coffee Consumed": "Americano",
+        "Population (millions)": 65.92947788
+      },
+      {
+        "Country": "Country_29",
+        "Year": 2011,
+        "Coffee Consumption (kg per capita per year)": null,
+        "Average Coffee Price (USD per kg)": 4.346744038,
+        "Type of Coffee Consumed": null,
+        "Population (millions)": 82.45668033
+      },
+      {
+        "Country": "Country_15",
+        "Year": 2020,
+        "Coffee Consumption (kg per capita per year)": 3.312915517,
+        "Average Coffee Price (USD per kg)": 8.767496071,
+        "Type of Coffee Consumed": "Latte",
+        "Population (millions)": 110.9388619
+      },
+      {
+        "Country": "Country_43",
+        "Year": 2005,
+        "Coffee Consumption (kg per capita per year)": null,
+        "Average Coffee Price (USD per kg)": null,
+        "Type of Coffee Consumed": null,
+        "Population (millions)": 43.13720709
+      },
+      {
+        "Country": "Country_8",
+        "Year": 2019,
+        "Coffee Consumption (kg per capita per year)": 4.637848857,
+        "Average Coffee Price (USD per kg)": 8.999098575,
+        "Type of Coffee Consumed": "Mocha",
+        "Population (millions)": 65.48426225
+      },
+      {
+        "Country": "Country_21",
+        "Year": 2004,
+        "Coffee Consumption (kg per capita per year)": 5.693273446,
+        "Average Coffee Price (USD per kg)": 9.059761449,
+        "Type of Coffee Consumed": null,
+        "Population (millions)": 119.11866
+      },
+      {
+        "Country": "Country_39",
+        "Year": 2022,
+        "Coffee Consumption (kg per capita per year)": 3.638569977,
+        "Average Coffee Price (USD per kg)": null,
+        "Type of Coffee Consumed": "Latte",
+        "Population (millions)": 138.4609022
+      },
+      {
+        "Country": "Country_19",
+        "Year": 2008,
+        "Coffee Consumption (kg per capita per year)": null,
+        "Average Coffee Price (USD per kg)": 6.798276891,
+        "Type of Coffee Consumed": "Mocha",
+        "Population (millions)": 133.807123
+      },
+      {
+        "Country": "Country_23",
+        "Year": 2015,
+        "Coffee Consumption (kg per capita per year)": 3.606965886,
+        "Average Coffee Price (USD per kg)": 12.27078771,
+        "Type of Coffee Consumed": "Latte",
+        "Population (millions)": 72.16701186
+      },
+      {
+        "Country": "Country_11",
+        "Year": 2021,
+        "Coffee Consumption (kg per capita per year)": null,
+        "Average Coffee Price (USD per kg)": 5.68424884,
+        "Type of Coffee Consumed": "Mocha",
+        "Population (millions)": 78.60900375
+      }
+    ]
+  }
+}
